@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="color:green ;">
+<p style="font-size:20px">
+Please Update your Details Here
+</p>
+<form  method="post"  >
+
+ 		{% csrf_token %}
+        {{ form.as_p}}
+
+ 		<input type="submit" name='create' value="UPDATE" >
+    	</form>>
+<a href="{% url 'logout' %}"> Click Here to logout></a>
+
+</body>
+</html>

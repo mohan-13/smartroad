@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table, th,td {
+    border: 1px solid black;
+    color: green;
+    align-items: center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>
+    Your Aadhar Id:
+    {{ adhar }}
+</p>
+<p>
+    Your License Id:
+    {{ lic }}
+</p>
+
+    Your Vehicles Details:
+<table >
+
+    <tr>
+        <th>S.No</th>
+        <th>Vehicle Number</th>
+        <th>Insurance ID</th>
+    </tr>
+    {% for ls in veh %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.regno }}</td>
+        <td>{{ ls.insuranceid }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+<p>
+    Your Pending Fine:
+    {{ fine }}
+</p>
+Your Fine Details:
+<table >
+
+    <tr>
+        <th>S.No</th>
+        <th>Checked BY</th>
+        <th>Fine Amount</th>
+        <th>Date and Time</th>
+    </tr>
+    {% for ls in finedet %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.checked_by }}</td>
+        <td>{{ ls.fine_imp }}</td>
+        <td>{{ ls.checked_on }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+<a href="{% url 'logout' %}"> Click Here to logout></a>
+</body>
+</html>
