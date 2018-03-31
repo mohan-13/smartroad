@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table, th,td {
+    border: 1px solid black;
+    color: green;
+    align-items: center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    Auth User Table Details
+</p>
+<table >
+
+    <tr>
+        <th>S.No</th>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    {% for ls in authdata %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.username }}</td>
+        <td>{{ ls.password }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+<p>
+    User Table Details
+</p>
+<table >
+
+    <tr>
+        <th>S.No</th>
+        <th>Aadhar Number</th>
+        <th>Account Type </th>
+        <th>Base User</th>
+    </tr>
+    {% for ls in data %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.aadhar_id }}</td>
+        <td>{{ ls.user_type }}</td>
+        <td>{{ ls.base_user }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+<p>
+    Profile Details:
+</p>
+<table >
+
+    <tr>
+        <th>S.No</th>
+        <th>User Table ID</th>
+        <th>License Number</th>
+        <th>Helmet ID</th>
+    </tr>
+    {% for ls in profdata %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.userid }}</td>
+        <td>{{ ls.licensenum }}</td>
+        <td>{{ ls.helmetid }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+<p>
+    Vehicle Details:
+</p>
+<table >
+
+    <tr>
+        <th>S.No</th>
+        <th>User Table ID</th>
+        <th>Regitration Number</th>
+        <th>Insurance ID</th>
+    </tr>
+    {% for ls in vdata %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.userid }}</td>
+        <td>{{ ls.regno }}</td>
+        <td>{{ ls.insuranceid }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+</body>
+</html>

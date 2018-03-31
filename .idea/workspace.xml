@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ff524dc-45fd-4530-b365-d404bc0e3504" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/onroad/migrations/0004_auto_20180331_2153.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vehicleusers/migrations/0006_auto_20180331_2153.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/datafetch.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/corruption/settings.py" afterPath="$PROJECT_DIR$/corruption/settings.py" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/onroad/forms.py" afterPath="$PROJECT_DIR$/onroad/forms.py" />
+      <change beforePath="$PROJECT_DIR$/onroad/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/onroad/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/onroad/migrations/0002_auto_20180331_0115.py" afterPath="$PROJECT_DIR$/onroad/migrations/0002_auto_20180331_2310.py" />
+      <change beforePath="$PROJECT_DIR$/onroad/migrations/0003_auto_20180331_2050.py" afterPath="$PROJECT_DIR$/onroad/migrations/0003_auto_20180331_2347.py" />
+      <change beforePath="$PROJECT_DIR$/onroad/migrations/0004_auto_20180331_2153.py" afterPath="$PROJECT_DIR$/onroad/migrations/0004_auto_20180331_2349.py" />
+      <change beforePath="$PROJECT_DIR$/onroad/models.py" afterPath="$PROJECT_DIR$/onroad/models.py" />
       <change beforePath="$PROJECT_DIR$/onroad/views.py" afterPath="$PROJECT_DIR$/onroad/views.py" />
       <change beforePath="$PROJECT_DIR$/templates/onroad/checking.html" afterPath="$PROJECT_DIR$/templates/onroad/checking.html" />
       <change beforePath="$PROJECT_DIR$/templates/onroad/postchecking.html" afterPath="$PROJECT_DIR$/templates/onroad/postchecking.html" />
-      <change beforePath="$PROJECT_DIR$/vehicleusers/forms.py" afterPath="$PROJECT_DIR$/vehicleusers/forms.py" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/vehicleusers/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/migrations/0002_user_fine_date.py" afterPath="$PROJECT_DIR$/vehicleusers/migrations/0002_auto_20180331_2310.py" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/migrations/0003_auto_20180331_0035.py" afterPath="$PROJECT_DIR$/vehicleusers/migrations/0004_auto_20180331_2349.py" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/migrations/0004_auto_20180331_0115.py" afterPath="$PROJECT_DIR$/vehicleusers/migrations/0003_auto_20180331_2347.py" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/migrations/0005_auto_20180331_2050.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/migrations/0006_auto_20180331_2153.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/vehicleusers/models.py" afterPath="$PROJECT_DIR$/vehicleusers/models.py" />
       <change beforePath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/myprofile.html" afterPath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/myprofile.html" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/spview.html" afterPath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/spview.html" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updateprofile.html" afterPath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updateprofile.html" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updatevehicle.html" afterPath="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updatevehicle.html" />
+      <change beforePath="$PROJECT_DIR$/vehicleusers/urls.py" afterPath="$PROJECT_DIR$/vehicleusers/urls.py" />
       <change beforePath="$PROJECT_DIR$/vehicleusers/views.py" afterPath="$PROJECT_DIR$/vehicleusers/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +55,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onroad/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="21" column="138" lean-forward="false" selection-start-line="21" selection-start-column="138" selection-end-line="21" selection-end-column="138" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/corruption/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="124" column="23" lean-forward="false" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/onroad/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            <state relative-caret-position="357">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="e#0#76#0" expanded="true" />
               </folding>
@@ -52,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postchecking.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/onroad/postchecking.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onroad/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="126">
+              <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -65,8 +100,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vehicleusers/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="378">
+              <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -75,22 +110,20 @@
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/corruption/urls.py">
+        <entry file="file://$PROJECT_DIR$/vehicleusers/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-              <folding>
-                <element signature="e#699#739#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vehicleusers/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="656">
+              <caret line="91" column="123" lean-forward="false" selection-start-line="91" selection-start-column="123" selection-end-line="91" selection-end-column="123" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -101,28 +134,18 @@
       <file leaf-file-name="spview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/spview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="509">
+              <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/onroad/models.py">
+      <file leaf-file-name="datafetch.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/datafetch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vehicleusers/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="52" column="46" lean-forward="false" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+            <state relative-caret-position="425">
+              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -131,18 +154,8 @@
       <file leaf-file-name="myprofile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/myprofile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checking.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/onroad/checking.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="16" column="15" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="299">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -174,23 +187,25 @@
         <option value="$PROJECT_DIR$/publisusers/views.py" />
         <option value="$PROJECT_DIR$/vehicleusers/templates/publicusers/updateprofile.html" />
         <option value="$PROJECT_DIR$/templates/checking.html" />
-        <option value="$PROJECT_DIR$/corruption/settings.py" />
-        <option value="$PROJECT_DIR$/onroad/models.py" />
-        <option value="$PROJECT_DIR$/onroad/forms.py" />
-        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updatevehicle.html" />
         <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/home.html" />
-        <option value="$PROJECT_DIR$/vehicleusers/urls.py" />
         <option value="$PROJECT_DIR$/vehicleusers/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/onroad/urls.py" />
         <option value="$PROJECT_DIR$/corruption/urls.py" />
-        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/myprofile.html" />
-        <option value="$PROJECT_DIR$/templates/onroad/postchecking.html" />
-        <option value="$PROJECT_DIR$/templates/onroad/checking.html" />
-        <option value="$PROJECT_DIR$/onroad/views.py" />
         <option value="$PROJECT_DIR$/vehicleusers/forms.py" />
-        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/spview.html" />
-        <option value="$PROJECT_DIR$/vehicleusers/models.py" />
+        <option value="$PROJECT_DIR$/templates/onroad/checking.html" />
+        <option value="$PROJECT_DIR$/templates/onroad/postchecking.html" />
+        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/myprofile.html" />
+        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updateprofile.html" />
+        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updatevehicle.html" />
+        <option value="$PROJECT_DIR$/onroad/models.py" />
+        <option value="$PROJECT_DIR$/onroad/forms.py" />
         <option value="$PROJECT_DIR$/vehicleusers/views.py" />
+        <option value="$PROJECT_DIR$/vehicleusers/urls.py" />
+        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/datafetch.html" />
+        <option value="$PROJECT_DIR$/vehicleusers/models.py" />
+        <option value="$PROJECT_DIR$/vehicleusers/templates/vehicleusers/spview.html" />
+        <option value="$PROJECT_DIR$/onroad/views.py" />
+        <option value="$PROJECT_DIR$/corruption/settings.py" />
       </list>
     </option>
   </component>
@@ -244,17 +259,6 @@
             <path>
               <item name="corruption" type="b2602c69:ProjectViewProjectNode" />
               <item name="corruption" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corruption" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corruption" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="onroad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corruption" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corruption" type="462c0819:PsiDirectoryNode" />
               <item name="vehicleusers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,6 +266,13 @@
               <item name="corruption" type="462c0819:PsiDirectoryNode" />
               <item name="vehicleusers" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corruption" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corruption" type="462c0819:PsiDirectoryNode" />
+              <item name="vehicleusers" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="corruption" type="b2602c69:ProjectViewProjectNode" />
@@ -284,14 +295,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\My Files\Django\corruption\templates\onroad" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\My Files\Django\corruption\vehicleusers\templates\registration" />
       <recent name="C:\My Files\Django\corruption\onroad" />
       <recent name="C:\My Files\Django\corruption\road\templates\registration" />
       <recent name="C:\My Files\Django\corruption\road\templates\road" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\My Files\Django\corruption\templates\onroad" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,6 +396,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -397,17 +434,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/corruption/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#699#739#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/road/models.py" />
     <entry file="file://$PROJECT_DIR$/road/forms.py" />
     <entry file="file://$PROJECT_DIR$/road/views.py" />
     <entry file="file://$PROJECT_DIR$/road/templates/road/signup.html" />
@@ -456,21 +482,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vehicleusers/templates/publicusers/updateprofile.html" />
-    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/registration/logged_out.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corruption/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python Files/Lib/site-packages/django/db/models/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -495,61 +506,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updateprofile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updatevehicle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onroad/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python Files/Lib/site-packages/django/contrib/auth/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="56" column="4" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vehicleusers/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,73 +542,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/onroad/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onroad/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/onroad/checking.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="21">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vehicleusers/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/onroad/postchecking.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="84">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/registration/logged_out.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updateprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/updatevehicle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onroad/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="21" column="138" lean-forward="false" selection-start-line="21" selection-start-column="138" selection-end-line="21" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/datafetch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/myprofile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="299">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vehicleusers/templates/vehicleusers/spview.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onroad/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicleusers/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vehicleusers/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="656">
+          <caret line="91" column="123" lean-forward="false" selection-start-line="91" selection-start-column="123" selection-end-line="91" selection-end-column="123" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onroad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="54" selection-start-column="22" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corruption/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="124" column="23" lean-forward="false" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -13,13 +13,13 @@ class checkingform(forms.ModelForm):
         fields = ('aadhar','licnum','vehnum' )
 
 
-    def save(self, y,request,commit=True):
+    def save(self, y,request,rea,commit=True):
         data=self.cleaned_data
         daadhar=data["aadhar"]
         x = User.objects.get(id=request.user.id)
         cuser = user.objects.get(base_user_id=x)
         caadhar=cuser.aadhar_id
-        check_obj=checkdetails.objects.create(checked_by=caadhar,driver=daadhar,fine_imp=y,checked_on=timezone.datetime.now())
+        check_obj=checkdetails.objects.create(checked_by=caadhar,driver=daadhar,fine_imp=y,checked_on=timezone.datetime.now(),fine_reason=rea)
         return check_obj
 
 

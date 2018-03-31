@@ -17,7 +17,7 @@ class user(models.Model):
     fine_date=models.DateTimeField(default=timezone.datetime.now())
 class userdetails(models.Model):
     userid=models.ForeignKey(User,blank=True,null=True)
-    licensenum=models.CharField(default=0,max_length=100)
+    licensenum=models.CharField(default=0,max_length=100,unique=True)
     helmetid=models.IntegerField(default=0,blank=True,null=True)
 class vehicledetails(models.Model):
     userid=models.ForeignKey(User,blank=True,null=True)

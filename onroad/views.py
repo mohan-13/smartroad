@@ -3,6 +3,8 @@ from .forms import *
 from vehicleusers.models import *
 from django.utils import timezone
 from django.contrib import messages
+from django.conf import settings
+from django.core.mail import send_mail
 # Create your views here.
 def checking(request):
     if request.user.is_authenticated():
@@ -11,6 +13,9 @@ def checking(request):
 
         if (cuser.user_type == 1):
             form = checkingform(request.POST)
+            id = request.user.id
+            cuser = user.objects.get(base_user_id=id)
+
             if form.is_valid():
                 data = form.cleaned_data
                 licnum = data['licnum']
@@ -44,7 +49,14 @@ def checking(request):
                     data1.fine = data1.fine + x
                     data1.fine_date = timezone.now()
                     data1.save()
-                    form.save(x, request)
+                    reason=ls+" , "+vs
+                    form.save(x, request,reason)
+                    sender=data1.base_user
+                    # print(sender)
+                    # msg= "HI!!!!"+str(aadharnum)+".Your Checking Status:"+ls+" with ID "+str(licnum)+"."+vs+" with Reg.NO: "+str(vehnum)+" . Your Total Fine: "+str(x)+"  Thank You"
+                    # g = send_mail('Smart Road Checking Portal ', msg, settings.EMAIL_HOST_USER,
+                    #               [sender], fail_silently=False)
+
                     args = {'license': ls, 'vehicle': vs,'fine':x}
 
                     return render(request, 'onroad/postchecking.html', args)

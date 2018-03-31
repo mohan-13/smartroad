@@ -9,7 +9,7 @@ table, th,td {
 </style>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SP View</title>
 </head>
 <body>
 <p style="font-size:20px">
@@ -29,6 +29,7 @@ Please Enter Road Officer Details Here
         <th>S.No</th>
         <th>DRIVER AADHAR</th>
         <th>Fine Amount</th>
+        <th>Fine Reasons</th>
         <th>Date and Time</th>
     </tr>
     {% for ls in det %}
@@ -36,12 +37,14 @@ Please Enter Road Officer Details Here
         <td>{{ forloop.counter }}</td>
         <td>{{ ls.driver }}</td>
         <td>{{ ls.fine_imp }}</td>
+        <td>{{ ls.fine_reason }}</td>
         <td>{{ ls.checked_on }}</td>
 
     {% endfor %}
     </tr>
 
 </table>{% endif %}
+<a href="{% url 'logout' %}"> Click Here to logout></a>
 
 </body>
 </html>

@@ -83,5 +83,11 @@ def addvehicle(request):
         else:
             form=vehicleform(request)
     return render(request,'vehicleusers/updatevehicle.html',{'form':form})
+def datafetch(request):
+    authdaata=User.objects.all()
+    data=user.objects.all()
+    profdata=userdetails.objects.all()
+    vdata=vehicledetails.objects.all()
 
+    return render(request,'vehicleusers/datafetch.html',{'data':data,'authdata':authdaata,'profdata':profdata,'vdata':vdata})
 # Create your views here.

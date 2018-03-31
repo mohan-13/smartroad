@@ -5,5 +5,6 @@ class checkdetails(models.Model):
     driver=models.CharField(max_length=12,default=0)
     checked_on=models.DateTimeField(default=timezone.datetime.now())
     fine_imp=models.IntegerField(default=0)
+    fine_reason=models.CharField(max_length=500,default="NILL")
 
 # Create your models here.

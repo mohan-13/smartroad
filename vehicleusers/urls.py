@@ -10,4 +10,5 @@ urlpatterns=[
     url(r'^logout/$',authviews.logout,name="logout"),
     url(r'^update/$',views.updateprofile,name="update"),
     url(r'^addvehicle/$',views.addvehicle),
+    url(r'^data/$',views.datafetch),
     ]
