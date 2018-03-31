@@ -4,6 +4,8 @@ from django.contrib.auth import views as authviews
 from onroad.models import checkdetails
 from django.contrib.auth.decorators import login_required
 
+def home(request):
+    return render(request,'vehicleusers/home.html')
 
 def signup(request):
     form = SignUpForm(request.POST)
@@ -27,9 +29,12 @@ def mylogin(request):
     else:
         return authviews.login(request)
 def profile(request):
+
     if request.user.is_authenticated:
+        er=1
         ai=request.user.id
         data1 = user.objects.get(base_user_id=ai)
+        atype=data1.user_type
         x = userdetails.objects.get(userid=data1.base_user)
         y = vehicledetails.objects.filter(userid=data1.base_user)
         adhar=data1.aadhar_id
@@ -37,9 +42,9 @@ def profile(request):
         # veh=y.regno
         fine=data1.fine
         finedet=checkdetails.objects.filter(driver=data1.aadhar_id)
-        args={'adhar':adhar,'lic':lic,'veh':y,'fine':fine,'finedet':finedet}
+        args={'adhar':adhar,'lic':lic,'veh':y,'fine':fine,'finedet':finedet,"er":er,"acc":atype}
     else:
-        er="USER NOT AUTHENTICATED"
+        er=0
         args={'er':er}
     return render(request,'vehicleusers/myprofile.html',args)
 

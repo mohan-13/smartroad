@@ -4,6 +4,6 @@ from django.contrib.auth import views as authviews
 
 urlpatterns=[
 
-    url(r'^checking/',views.checking),
+    url(r'^checking/$',views.checking,name="onroad"),
 
     ]

@@ -4,9 +4,9 @@ from datetime import datetime
 from django.utils import timezone
 
 class user(models.Model):
-    ROAD_OFFICER = 0
+    ROAD_OFFICER = 1
     SP = 1
-    DRIVER = 2
+    DRIVER = 0
 
     ACCOUNT_TYPES = (
         (ROAD_OFFICER, 'Road Officer'), (SP, 'SP'), (DRIVER, 'Driver'))

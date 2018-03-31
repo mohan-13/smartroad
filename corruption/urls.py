@@ -19,7 +19,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^users/',include('vehicleusers.urls')),
-    url(r'^onroad/',include('onroad.urls')),
+
+    url(r'^',include('vehicleusers.urls')),
+    url(r'^onroad/',include('onroad.urls'),),
 
 ]
