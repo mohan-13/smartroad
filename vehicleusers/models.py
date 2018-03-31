@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class user(models.Model):
     ROAD_OFFICER = 1
-    SP = 1
+    SP = 2
     DRIVER = 0
 
     ACCOUNT_TYPES = (

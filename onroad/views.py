@@ -2,13 +2,13 @@ from django.shortcuts import render,HttpResponse,render_to_response,redirect
 from .forms import *
 from vehicleusers.models import *
 from django.utils import timezone
-
+from django.contrib import messages
 # Create your views here.
 def checking(request):
     if request.user.is_authenticated():
         id = request.user.id
         cuser = user.objects.get(base_user_id=id)
-        print(cuser.user_type)
+
         if (cuser.user_type == 1):
             form = checkingform(request.POST)
             if form.is_valid():
@@ -45,7 +45,7 @@ def checking(request):
                     data1.fine_date = timezone.now()
                     data1.save()
                     form.save(x, request)
-                    args = {'license': ls, 'vehicle': vs}
+                    args = {'license': ls, 'vehicle': vs,'fine':x}
 
                     return render(request, 'onroad/postchecking.html', args)
                 except user.DoesNotExist:
@@ -55,6 +55,7 @@ def checking(request):
 
             else:
                 form = checkingform()
+                messages.info(request,"Please provide correct Credentials",)
                 return render(request, 'onroad/checking.html', {'form': form})
         else:
             return HttpResponse("<h1>You are not authenticated to access this page</h1><a  href= logout>LOG0UT</a> ")

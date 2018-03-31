@@ -35,18 +35,32 @@ def profile(request):
         ai=request.user.id
         data1 = user.objects.get(base_user_id=ai)
         atype=data1.user_type
-        x = userdetails.objects.get(userid=data1.base_user)
-        y = vehicledetails.objects.filter(userid=data1.base_user)
-        adhar=data1.aadhar_id
-        lic = x.licensenum
-        # veh=y.regno
-        fine=data1.fine
-        finedet=checkdetails.objects.filter(driver=data1.aadhar_id)
-        args={'adhar':adhar,'lic':lic,'veh':y,'fine':fine,'finedet':finedet,"er":er,"acc":atype}
+        if(atype==0 or atype==1):
+            x = userdetails.objects.get(userid=data1.base_user)
+            y = vehicledetails.objects.filter(userid=data1.base_user)
+            adhar = data1.aadhar_id
+            lic = x.licensenum
+            # veh=y.regno
+            fine = data1.fine
+            finedet = checkdetails.objects.filter(driver=data1.aadhar_id)
+            args = {'adhar': adhar, 'lic': lic, 'veh': y, 'fine': fine, 'finedet': finedet, "er": er, "acc": atype}
+            return render(request, 'vehicleusers/myprofile.html', args)
+        else:
+            form = spform(request.POST)
+            if form.is_valid():
+                x = 1
+                data = form.cleaned_data
+                off_addhar = data["road_aadhar"]
+                det = checkdetails.objects.filter(checked_by=off_addhar)
+                return render(request, 'vehicleusers/spview.html', {'det': det, 'x': x,'form':form})
+            else:
+                form = spform()
+                return render(request, 'vehicleusers/spview.html', {'form': form})
+
     else:
         er=0
         args={'er':er}
-    return render(request,'vehicleusers/myprofile.html',args)
+        return render(request,'vehicleusers/myprofile.html',args)
 
 
 

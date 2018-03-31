@@ -49,6 +49,8 @@ class vehicleform(forms.ModelForm):
         insuranceid = data['insuranceid']
         veh_obj = vehicledetails.objects.create(regno=regno,insuranceid=insuranceid, userid=self.user)
         return veh_obj
+class spform(forms.Form):
+    road_aadhar=forms.CharField(max_length=12)
 
 
 

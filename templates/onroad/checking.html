@@ -6,7 +6,7 @@
 </head>
 <body style="color:green ;">
 <p style="font-size:20px">
-Please Provide your Details Here
+Please Enter Driver Details Here
 </p>
 <form  method="post"  >
 
@@ -15,6 +15,11 @@ Please Provide your Details Here
 
  		<input type="submit" name='create' value="Verify" >
     	</form>
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
 <a href="{% url 'logout' %}"> Click Here to logout></a>
 
 </body>
