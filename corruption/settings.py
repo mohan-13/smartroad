@@ -122,7 +122,7 @@ USE_TZ = True
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD = '' #my gmail password
+EMAIL_HOST_PASSWORD = 'smartroad@kct' #my gmail password
 EMAIL_HOST_USER = 'smartroad123@gmail.com' #my gmail username
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -130,4 +130,5 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 LOGIN_REDIRECT_URL="myprofile"

@@ -52,7 +52,7 @@ def checking(request):
                     reason=ls+" , "+vs
                     form.save(x, request,reason)
                     sender=data1.base_user
-                    # print(sender)
+                    print(sender)
                     # msg= "HI!!!!"+str(aadharnum)+".Your Checking Status:"+ls+" with ID "+str(licnum)+"."+vs+" with Reg.NO: "+str(vehnum)+" . Your Total Fine: "+str(x)+"  Thank You"
                     # g = send_mail('Smart Road Checking Portal ', msg, settings.EMAIL_HOST_USER,
                     #               [sender], fail_silently=False)

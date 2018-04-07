@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+{% load static %}
+</style>
 <head>
     <meta charset="UTF-8">
-    <title>HOME</title>
-</head>
-<body background="#90EE90">
 
+    <title>Smart Road Verification Portal </title>
+</head>
 <center>
-<h1 STYLE="alignment: center">SMART ROAD VERIFICATION PORTAL</h1>
+            <h1 style="font-style: italic ;color: aliceblue" >SMART ROAD VERIFICATION PORTAL</h1>
     </center>
 
-    <p>
-        <a style="color:green" href="{% url "login" %}">LOGIN</a>
-    </p>
+<body >
+    <link rel="stylesheet" type="text/css" href="{% static 'vehicleusers/style.css' %}" />
+
+    <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="{% url "login" %}">LOGIN</a></li>
+</ul>
 </body>
 </html>
