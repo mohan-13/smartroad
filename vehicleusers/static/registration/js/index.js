@@ -1,12 +1,6 @@
-// Toggle Function
-$('.toggle').click(function(){
-  // Switches the Icon
-  $(this).children('i').toggleClass('fa-pencil');
-  // Switches the forms  
-  $('.form').animate({
-    height: "toggle",
-    'padding-top': 'toggle',
-    'padding-bottom': 'toggle',
-    opacity: "toggle"
-  }, "slow");
+ $("#login-button").click(function(event){
+		 event.preventDefault();
+	 
+	 $('form').fadeOut(500);
+	 $('.wrapper').addClass('form-success');
 });

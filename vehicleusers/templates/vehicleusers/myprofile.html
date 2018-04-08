@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'vehicleusers/style.css' %}" />
 <style>
 table, th,td {
     border: 1px solid black;
@@ -7,20 +9,32 @@ table, th,td {
     align-items: center;
 }
 </style>
+
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
 </head>
-<body>
+<body class="profile">
+
+
+<ul>
+  <li><a  href="#home">Home</a></li>
+  <li><a class="active" href="">My Profile</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="{% url "logout" %}?next={% url 'landing_page' %}" >LOGOUT</a></li>
+</ul>
 {% if er %}
-<p>
-    Your Aadhar Id:
-    {{ adhar }}
-</p>
-<p>
-    Your License Id:
-    {{ lic }}
-</p>
+
+  <img src="{% static 'vehicleusers/images/user.jpg' %}" alt="Avatar" class="image" style="width: 500px" >
+
+<div class="aadhar">
+    <p class="aadhar">Your Aadhar Id:
+        {{ adhar }}</p>
+    <p class="aadhar">Your License Id:
+        {{ lic }}</p>
+    <p class="aadhar">Your Pending Fine:
+        {{ fine }}</p>
+</div>
 
     Your Vehicles Details:
 <table >
@@ -40,10 +54,7 @@ table, th,td {
     </tr>
 
 </table>
-<p>
-    Your Pending Fine:
-    {{ fine }}
-</p>
+
 Your Fine Details:
 <table >
 
@@ -65,8 +76,9 @@ Your Fine Details:
 
 </table>
     {% if acc %}
-        <h1><a href="{% url 'onroad' %}"> START CHECKING</a></h1>{% endif %}
-<a href="{% url 'logout' %}"> Click Here to logout></a>
+        <h1><a href="{% url 'onroad' %}"> START CHECKING</a></h1>
+    {% endif %}
+
 {% else %}
 <h1>Your are not logged in</h1>
 <a href="{% url 'login' %}"> Click Here to login></a>{% endif %}

@@ -5,6 +5,17 @@ body {
     opacity: 1;
     filter:alpha(opacity);
 }
+.profile
+{
+    background: #e9e9e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table, th,td {
+    border: 1px solid black;
+    color: green;
+    align-items: center;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,4 +47,32 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+p
+{
+    font-style: italic ;
+    /*color: orangered;*/
+    font-size:9vw;
+    text-align: center;
+    text-decoration-style: dotted;
+    font-variant:small-caps;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aadhar
+{   font-size: 22px;
+    color:#e05252;
+    background:#e05252;
+    margin-top: 20px;
+    padding: 10px 15px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+img{
+    border-radius: 10px;
+    padding: 0 10px;
+    float: left;
 }

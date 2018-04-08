@@ -3,37 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login Form</title>
+  <title>Login</title>
   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-{% load static %}
+  
+  
+      {% load static %}
       <link rel="stylesheet" type="text/css" href="{% static 'registration/css/style.css' %}" />
+
 
   
 </head>
 
 <body>
 
-  
-<!-- Form Mixin-->
-<!-- Input Mixin-->
-<!-- Button Mixin-->
-<!-- Pen Title-->
-<div class="pen-title">
-  <h1>Login Here</h1>
-</div>
-<!-- Form Module-->
-<div class="module form-module">
-  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-
-  </div>
-  <div class="form">
-    <h2>Login to your account</h2>
-    <form method="post" action="{% url 'login' %}">
-    {% csrf_token %}
+  <div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		 <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
         <table>
         <tr>
             <td>{{ form.username.label_tag }}</td>
@@ -49,7 +37,25 @@
             <button type="submit"  id="login-button">Login</button>
             <input type="hidden" name="next" value="{{ next }}" />
     </form>
-  </div>
+
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+
+
 
 </body>
 
