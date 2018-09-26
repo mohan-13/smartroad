@@ -132,6 +132,8 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 
+
+
 LOGIN_REDIRECT_URL="myprofile"
 
 LOGOUT_REDIRECT_URL = "landing_page"

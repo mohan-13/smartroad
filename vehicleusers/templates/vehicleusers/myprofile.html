@@ -2,14 +2,6 @@
 <html lang="en">
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'vehicleusers/style.css' %}" />
-<style>
-table, th,td {
-    border: 1px solid black;
-    color: green;
-    align-items: center;
-}
-</style>
-
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
@@ -18,12 +10,20 @@ table, th,td {
 
 
 <ul>
-  <li><a  href="#home">Home</a></li>
+  <li><a  href="{% url "landing_page" %}">Home</a></li>
   <li><a class="active" href="">My Profile</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li style="float:right"><a href="{% url "logout" %}?next={% url 'landing_page' %}" >LOGOUT</a></li>
+  <li><a href="{% url "vehdet" %}">Vehicles</a></li>
+    <li><a href="{% url "finedet" %}">Fines</a></li>
+    {% if acc %}
+        <li><a href="{% url "onroad" %}">START CHECKING</a></li>
+    {% endif %}
+    <li style="float:right"><a href="{% url "myprofile" %}">HI! {{ user }}</a></li>
+  <li   style="float:right">
+      <a href="{% url "logout" %}?next={% url 'landing_page' %} "  >
+      <img src="{% static 'vehicleusers/images/logout2.png' %}" alt="Avatar"  style="width: 75px;border-radius: 100%" >
+</a>
 </ul>
-{% if er %}
+
 
   <img src="{% static 'vehicleusers/images/user.jpg' %}" alt="Avatar" class="image" style="width: 500px" >
 
@@ -36,51 +36,12 @@ table, th,td {
         {{ fine }}</p>
 </div>
 
-    Your Vehicles Details:
-<table >
 
-    <tr>
-        <th>S.No</th>
-        <th>Vehicle Number</th>
-        <th>Insurance ID</th>
-    </tr>
-    {% for ls in veh %}
-        <tr>
-        <td>{{ forloop.counter }}</td>
-        <td>{{ ls.regno }}</td>
-        <td>{{ ls.insuranceid }}</td>
 
-    {% endfor %}
-    </tr>
 
-</table>
 
-Your Fine Details:
-<table >
-
-    <tr>
-        <th>S.No</th>
-        <th>Checked BY</th>
-        <th>Fine Amount</th>
-        <th>Date and Time</th>
-    </tr>
-    {% for ls in finedet %}
-        <tr>
-        <td>{{ forloop.counter }}</td>
-        <td>{{ ls.checked_by }}</td>
-        <td>{{ ls.fine_imp }}</td>
-        <td>{{ ls.checked_on }}</td>
-
-    {% endfor %}
-    </tr>
-
-</table>
-    {% if acc %}
-        <h1><a href="{% url 'onroad' %}"> START CHECKING</a></h1>
-    {% endif %}
-
-{% else %}
-<h1>Your are not logged in</h1>
-<a href="{% url 'login' %}"> Click Here to login></a>{% endif %}
+{#{% else %}#}
+{#<h1>Your are not logged in</h1>#}
+{#<a href="{% url 'login' %}"> Click Here to login></a>{% endif %}#}
 </body>
 </html>

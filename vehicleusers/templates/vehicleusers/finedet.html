@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fines</title>
+</head>
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'vehicleusers/style.css' %}" />
+<body class="fine">
+<ul>
+  <li><a  href="{% url "landing_page" %}">Home</a></li>
+  <li><a  href="{% url "myprofile" %}">My Profile</a></li>
+  <li><a href="{% url "vehdet" %}">Vehicles</a></li>
+    <li><a class="active" href="{% url "finedet" %}">Fines</a></li>
+    <li style="float:right"><a href="{% url "myprofile" %}">HI! {{ user }}</a></li>
+  <li style="float:right"><a href="{% url "logout" %}?next={% url 'landing_page' %}" >
+      <img src="{% static 'vehicleusers/images/logout2.png' %}" alt="Avatar" class="image" style="width: 75px;border-radius: 100%" >
+
+  </a></li>
+</ul>
+<p style="text-align: center;font-size: 36px;color: #f2f2f2;font-variant: small-caps">Your Fine Details</p>
+
+<table id="customers">
+
+    <tr>
+        <th>S.No</th>
+        <th>Checked BY</th>
+        <th>Fine Amount</th>
+        <th>Date and Time</th>
+    </tr>
+    {% for ls in finedet %}
+        <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ ls.checked_by }}</td>
+        <td>{{ ls.fine_imp }}</td>
+        <td>{{ ls.checked_on }}</td>
+
+    {% endfor %}
+    </tr>
+
+</table>
+
+</body>
+</html>

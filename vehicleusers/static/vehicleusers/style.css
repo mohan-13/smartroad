@@ -11,11 +11,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-table, th,td {
-    border: 1px solid black;
-    color: green;
-    align-items: center;
-}
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,7 +31,7 @@ li {
     border-right: 1px solid #bbb;
 }
 
-li a {
+li a, .dropbtn  {
     display: block;
     color: white;
     text-align: center;
@@ -45,9 +40,35 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+li a:hover , .dropdown:hover .dropbtn{
+    background-color: #111;}
+
+li.dropdown {
+    display: inline-block;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
 p
 {
     font-style: italic ;
@@ -66,7 +87,7 @@ p
 {   font-size: 22px;
     color:#e05252;
     background:#e05252;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px 15px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,4 +96,40 @@ img{
     border-radius: 10px;
     padding: 0 10px;
     float: left;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+.fine
+{
+    background: white url("images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.vehicle
+{
+    background: white url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }

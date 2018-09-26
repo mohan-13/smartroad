@@ -23,44 +23,58 @@ def signup(request):
         form = SignUpForm()
     return render(request, 'vehicleusers/signup.html', {'form': form})
 
+
 def mylogin(request):
     if request.user.is_authenticated:
         return redirect("update")
     else:
         return authviews.login(request)
+@login_required(login_url="login")
+def user_det(request):
+    ai = request.user.id
+    data1 = user.objects.get(base_user_id=ai)
+    user_list = data1
+    return user_list
+
+
+@login_required(login_url="login")
 def profile(request):
-
-    if request.user.is_authenticated:
-        er=1
-        ai=request.user.id
-        data1 = user.objects.get(base_user_id=ai)
-        atype=data1.user_type
-        if(atype==0 or atype==1):
-            x = userdetails.objects.get(userid=data1.base_user)
-            y = vehicledetails.objects.filter(userid=data1.base_user)
-            adhar = data1.aadhar_id
-            lic = x.licensenum
-            # veh=y.regno
-            fine = data1.fine
-            finedet = checkdetails.objects.filter(driver=data1.aadhar_id)
-            args = {'adhar': adhar, 'lic': lic, 'veh': y, 'fine': fine, 'finedet': finedet, "er": er, "acc": atype}
-            return render(request, 'vehicleusers/myprofile.html', args)
-        else:
-            form = spform(request.POST)
-            if form.is_valid():
-                x = 1
-                data = form.cleaned_data
-                off_addhar = data["road_aadhar"]
-                det = checkdetails.objects.filter(checked_by=off_addhar)
-                return render(request, 'vehicleusers/spview.html', {'det': det, 'x': x,'form':form})
-            else:
-                form = spform()
-                return render(request, 'vehicleusers/spview.html', {'form': form})
-
+    uid = user_det(request)
+    if (uid.user_type == 0 or uid.user_type == 1):
+        x = userdetails.objects.get(userid=uid.base_user)
+        y = vehicledetails.objects.filter(userid=uid.base_user)
+        adhar = uid.aadhar_id
+        lic = x.licensenum
+        fine = uid.fine
+        finedet = checkdetails.objects.filter(driver=uid.aadhar_id)
+        args = {'adhar': adhar, 'lic': lic, 'veh': y, 'fine': fine, 'finedet': finedet, "acc": uid.user_type,"user":uid.aadhar_id }
+        return render(request, 'vehicleusers/myprofile.html', args)
     else:
-        er=0
-        args={'er':er}
-        return render(request,'vehicleusers/myprofile.html',args)
+        form = spform(request.POST)
+        if form.is_valid():
+            x = 1
+            data = form.cleaned_data
+            off_addhar = data["road_aadhar"]
+            det = checkdetails.objects.filter(checked_by=off_addhar)
+            return render(request, 'vehicleusers/spview.html', {'det': det, 'x': x, 'form': form})
+        else:
+            form = spform()
+            return render(request, 'vehicleusers/spview.html', {'form': form})
+
+
+@login_required(login_url="login")
+def vehicledet(request):
+    uid = user_det(request)
+    c_user=uid.aadhar_id
+    vehs = vehicledetails.objects.filter(userid=uid.base_user)
+    return render(request,'vehicleusers/vehdet.html',{'veh':vehs,'user':c_user})
+@login_required(login_url="login")
+def finedetails(request):
+    uid = user_det(request)
+    finedet = checkdetails.objects.filter(driver=uid.aadhar_id)
+    c_user = uid.aadhar_id
+    return render(request, 'vehicleusers/finedet.html', {'finedet': finedet, 'user': c_user})
+
 
 
 
